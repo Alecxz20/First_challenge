@@ -1,0 +1,96 @@
+:root {
+  --main: #e14400;
+  --secondary-background: #d5e6ff;
+  --secondary-text: #0053cc;
+  --background-links: #ffe6db;
+  --background-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto Mono", monospace;
+  font-size: 62.5%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+
+.container {
+  width: 350px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.8rem;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+}
+
+figure img {
+  height: 150px;
+  border-radius: 50%;
+}
+
+.description {
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 0 20px;
+}
+
+.main-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-links button {
+  background-color: var(--background-links);
+  border: transparent;
+  color: var(--main);
+  height: 40px;
+  width: 100%;
+  cursor: pointer;
+}
+.main-links button:hover {
+  background-color: var(--main);
+  color: #fff;
+  font-weight: bold;
+}
+
+.main-links .first {
+  background-color: var(--secondary-background);
+  color: var(--secondary-text);
+  font-weight: bold;
+}
+.main-links .first:hover {
+  background-color: var(--secondary-text);
+  color: #fff;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.social-links img {
+  height: 15px;
+}
